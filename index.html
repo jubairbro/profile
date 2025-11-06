@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Jubair Ahmad | Tech Enthusiast</title>
+    
+    <meta name="description" content="Jubair Ahmad's official page - A space for tech enthusiasts to learn, share, and grow together.">
+    <meta name="author" content="Jubair Ahmad">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div id="preloader">
+        <div id="boot-screen">
+            <div id="boot-lines"></div>
+            <span id="boot-cursor">_</span>
+        </div>
+    </div>
+
+    <audio id="bgm" loop>
+        <source src="https://github.com/jubairbro/Faw/raw/refs/heads/main/audio.mp3" type="audio/mp3">
+    </audio>
+
+    <header class="main-header">
+        <a href="#home" class="header-logo">Jubair bro</a>
+        <div class="header-controls">
+            
+            <label class="theme-switch" for="theme-toggle-checkbox" aria-label="Toggle Theme">
+                <input type="checkbox" id="theme-toggle-checkbox">
+                <span class="switch-slider">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </span>
+            </label>
+
+            <button class="hamburger-btn" id="menu-toggle" aria-label="Open menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="top-dropdown-menu" id="top-dropdown-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#who-i-am" class="nav-link">Who I Am?</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#links" class="nav-link">Links</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#goals" class="nav-link">Goals</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="music-toggle-btn" id="music-toggle" aria-label="Toggle Music">
+        <i class="fas fa-music" id="music-icon"></i>
+    </button>
+    
+    <a href="#home" class="back-to-top-btn" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <main class="container">
+
+        <section id="home" class="hero-section">
+            <div class="hero-bg-image"></div>
+            <div class="hero-content">
+                <img src="https://raw.githubusercontent.com/jubairbro/Faw/refs/heads/main/photos/IMG_20250822_001904_975.jpg" alt="Jubair Ahmad" class="profile-img gsap-reveal-up" loading="lazy">
+                <h1 class="hero-title gsap-reveal-up" data-delay="0.2">
+                    Jubair <span>Ahmad</span>
+                </h1>
+                <p class="hero-tagline gsap-reveal-up" data-delay="0.4">
+                    Exploring technology and building community.
+                </p>
+            </div>
+        </section>
+
+        <section id="who-i-am" class="section-flat">
+            <h2 class="gsap-reveal-left">Who I Am?</h2>
+            <p class="gsap-reveal-right">
+                I am a student and tech enthusiast from Netrokona, Bangladesh. My core belief is in the power of sharing knowledge. Below are some of the tools and technologies I work with.
+            </p>
+            <div class="skills-grid">
+                <div class="skill-item gsap-reveal-up"><i class="devicon-ubuntu-plain"></i> Ubuntu</div>
+                <div class="skill-item gsap-reveal-up"><i class="devicon-windows8-original"></i> Windows</div>
+                <div class="skill-item gsap-reveal-up"><i class="devicon-vscode-plain"></i> VS Code</div>
+                <div class="skill-item gsap-reveal-up"><i class="devicon-android-plain"></i> Android</div>
+                <div class="skill-item gsap-reveal-up"><i class="devicon-python-plain"></i> Python</div>
+                <div class="skill-item gsap-reveal-up"><i class="devicon-javascript-plain"></i> JavaScript</div>
+                <div class="skill-item gsap-reveal-up"><i class="devicon-html5-plain"></i> HTML5</div>
+                <div class="skill-item gsap-reveal-up"><i class="devicon-css3-plain"></i> CSS3</div>
+            </div>
+        </section>
+
+        <section id="about" class="section-flat">
+            <h2 class="gsap-reveal-left">About Me</h2>
+            <p class="gsap-reveal-right">
+                I am deeply passionate about continuous learning and believe that knowledge only becomes truly valuable when it is shared... This space is a reflection of my journey, where I collect my thoughts, document my explorations, and share them with those who, like me, believe in the power of learning and growth. Thank you sincerely for taking the time to stop by.
+            </p>
+        </section>
+
+        <section id="bio" class="terminal-section gsap-reveal-up">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                </div>
+                <span class="terminal-title">jubair-data.json</span>
+            </div>
+            <div class="terminal-body">
+                <pre><code id="json-data"></code></pre>
+            </div>
+        </section>
+
+        <section id="links" class="section-flat">
+            <h2 class="gsap-reveal-up">Find Me Online</h2>
+            <div class="link-card-grid">
+                <a href="https://t.me/+1p9RnexGMP0yOGVl" class="link-card gsap-reveal-left" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-telegram-plane"></i>
+                    <div>
+                        <h3>Main Channel</h3>
+                        <p>Tech updates and resources.</p>
+                    </div>
+                </a>
+                
+                <a href="https://t.me/JubairSensei" class="link-card gsap-reveal-right" target="_blank" rel="noopener noreferrer"> <i class="fab fa-telegram-plane"></i> <div>
+                        <h3>Second Channel</h3>
+                        <p>Updates and personal thoughts.</p> </div>
+                </a>
+                
+                <a href="https://github.com/jubairbro" class="link-card gsap-reveal-left" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <h3>GitHub</h3>
+                        <p>All my open-source projects.</p>
+                    </div>
+                </a>
+                <a href="https://youtube.com/@jubairsensei" class="link-card gsap-reveal-right" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-youtube"></i>
+                    <div>
+                        <h3>YouTube</h3>
+                        <p>Tutorials and Tricks.</p>
+                    </div>
+                </a>
+                <a href="https://fb.com/jubair.py" class="link-card gsap-reveal-left" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                    <div>
+                        <h3>Facebook</h3>
+                        <p>Personal profile.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section gsap-reveal-up">
+            <h2 class="gallery-title">Gallery</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://raw.githubusercontent.com/jubairbro/Faw/refs/heads/main/photos/IMG_20250822_001904_975.jpg" alt="Gallery Image 1" loading="lazy" /></div>
+                    <div class="swiper-slide"><img src="https://raw.githubusercontent.com/jubairbro/Faw/refs/heads/main/photos/1735204262659.jpg" alt="Gallery Image 2" loading="lazy" /></div>
+                    <div class="swiper-slide"><img src="https://raw.githubusercontent.com/jubairbro/Faw/refs/heads/main/photos/satoru-gojo-jujutsu-5120x2880-10828.png" alt="Gallery Image 3" loading="lazy" /></div>
+                    <div class="swiper-slide"><img src="https://raw.githubusercontent.com/jubairbro/Faw/refs/heads/main/photos/IMG_20251001_161822_246.jpg" alt="Gallery Image 4" loading="lazy" /></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="goals" class="section-flat">
+            <h2 class="gsap-reveal-left">Future Goals</h2>
+            <p class="gsap-reveal-right">
+                My primary goal is to build a life that is fulfilling... staying true to the values of faith. I aspire to make my mother proud by achieving my dreams... With trust in Allah, I am committed to embracing every challenge and opportunity...
+            </p>
+            <blockquote class="gsap-reveal-up">
+                "Success isn't final, failure isn't fatal; it's the courage to keep going that matters."
+            </blockquote>
+        </section>
+        
+        <section id="contact" class="contact-section">
+            <h2 class="gsap-reveal-up">Contact Me</h2>
+            <p class="gsap-reveal-up" data-delay="0.1">Reach out through any of the channels below.</p>
+            <div class="footer-socials">
+                <a href="https://t.me/Jubairbro_bot" class="social-icon gsap-reveal-up" data-delay="0.2" target="_blank" rel="noopener noreferrer" aria-label="Telegram Bot"><i class="fab fa-telegram-plane"></i></a>
+                <a href="mailto:mdjubair6460@gmail.com" class="social-icon gsap-reveal-up" data-delay="0.3" target="_blank" rel="noopener noreferrer" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+8809638206448" class="social-icon gsap-reveal-up" data-delay="0.4" target="_blank" rel="noopener noreferrer" aria-label="Phone"><i class="fas fa-phone"></i></a>
+            </div>
+        </section>
+
+        <footer>
+            © 2025 Jubair Ahmad. All Rights Reserved.
+        </footer>
+
+    </main>
+
+    <script src="js/p.js"></script>
+    <script src="js/c.js"></script>
+    <script src="js/m.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/a.js"></script>
+</body>
+</html>
+<!-- code by Jubair bro -->
