@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Jubair Ahmad | Tech Enthusiast</title>
+    <meta name="description" content="Jubair Ahmad's official personal portfolio" />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: 'rgb(var(--color-primary) / <alpha-value>)',
+              dark: '#0f172a',
+              'card-dark': '#1e293b',
+              'card-light': '#ffffff',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+              mono: ['Fira Code', 'monospace'],
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'blob': 'blob 7s infinite',
+              'pop-in': 'popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards',
+              'spin-slow': 'spin 8s linear infinite',
+              'music-bar': 'musicBar 1s ease-in-out infinite alternate',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              blob: {
+                '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+              },
+              popIn: {
+                '0%': { opacity: '0', transform: 'scale(0.5) translateY(10px)' },
+                '100%': { opacity: '1', transform: 'scale(1) translateY(0)' },
+              },
+              musicBar: {
+                '0%': { height: '4px' },
+                '100%': { height: '16px' }
+              }
+            }
+          },
+        },
+      }
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&family=Fira+Code:wght@500&family=Noto+Serif+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- DevIcons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+      :root {
+        --color-primary: 39 174 96; /* Default Green */
+      }
+      
+      html, body {
+        /* Fixes the "weird" scroll feel by preventing elastic bounce on Mac/iOS */
+        overscroll-behavior-y: none;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        -webkit-tap-highlight-color: transparent;
+      }
+      
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(0,0,0,0.05);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgb(var(--color-primary));
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(var(--color-primary), 0.8);
+      }
+      
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
+      
+      .cursor-none {
+        cursor: none;
+      }
+
+      /* Custom Font for Bengali */
+      .font-bengali {
+        font-family: 'Noto Serif Bengali', serif;
+      }
+
+      /* Custom Speech Bubble Tail */
+      .speech-bubble::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0px;
+        width: 20px;
+        height: 20px;
+        background-color: inherit;
+        /* Create a more organic curve instead of a diamond */
+        clip-path: polygon(0 0, 100% 0, 100% 100%);
+        border-bottom-right-radius: 10px; 
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "gsap/": "https://esm.sh/gsap@^3.14.2/",
+    "gsap": "https://esm.sh/gsap@^3.14.2",
+    "swiper/": "https://esm.sh/swiper@^12.1.0/",
+    "swiper": "https://esm.sh/swiper@^12.1.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-Bz2t5pKh.js"></script>
+</head>
+  <body class="antialiased overflow-x-hidden selection:bg-primary selection:text-white transition-colors duration-300">
+    <div id="root"></div>
+</body>
+</html>
