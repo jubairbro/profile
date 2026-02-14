@@ -1,0 +1,12 @@
+# Ignore everything
+*
+!*/
+
+# Whitelist specific files for root
+!index.html
+!source.zip
+!CNAME
+!README.md
+!assets/
+!assets/**
+!.gitignore
