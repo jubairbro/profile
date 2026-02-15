@@ -1,11 +1,8 @@
-# Ignore everything
-/*
+# Ignore node_modules
+node_modules/
 
-# Whitelist specific files/folders
-!/index.html
-!/source.zip
-!/assets/
-!/assets/**
-!/CNAME
-!/README.md
-!/.gitignore
+# Ignore build artifacts (except assets which we use)
+dist/
+*.log
+
+# Keep everything else
