@@ -1,12 +1,11 @@
 # Ignore everything
-*
-!*/
+/*
 
-# Whitelist specific files for root
-!index.html
-!source.zip
-!CNAME
-!README.md
-!assets/
-!assets/**
-!.gitignore
+# Whitelist specific files/folders
+!/index.html
+!/source.zip
+!/assets/
+!/assets/**
+!/CNAME
+!/README.md
+!/.gitignore
